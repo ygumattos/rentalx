@@ -23,7 +23,7 @@
   "rules": {
     "prettier/prettier": "error",
     "camelcase": "off",
-    "import/no-unresolved": "error",
+    "import/no-unresolved": "off",
     "@typescript-eslint/naming-convention": [
       "error",
       {
@@ -45,7 +45,7 @@
     "no-empty-function": "off",
     "lines-between-class-members": "off",
     "import/extensions": [
-      "error",
+      "off",
       "ignorePackages",
       {
         "ts": "never"
@@ -71,13 +71,22 @@
       }
     ],
     "import/no-extraneous-dependencies": [
-      "error",
+      "off",
       {
         "devDependencies": [
           "**/*.spec.js"
         ]
       }
-    ]
+    ],
+    "import/named": "off",
+    "import/no-duplicates": "off",
+    "import/order": "off",
+    "import/no-self-import": "off",
+    "import/no-cycle": "off",
+    "import/no-relative-packages": "off",
+    "import/no-useless-path-segments": "off",
+    "import/no-named-as-default": "off",
+    "import/no-named-as-default-member": "off"
   },
   "settings": {
     "import/resolver": {
